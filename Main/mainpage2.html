@@ -1,0 +1,1684 @@
+<head>
+  <link rel="stylesheet" href="../Main/mainpage2.css">
+    <script src="../Main/mainpage.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main"> 
+        <button type="button" id="navopen" onclick="toggleNav()">
+          <ion-icon name="menu-outline" size="large"></ion-icon>
+        </button>
+        <div class="logo_div">
+          <img class="logo" src="Logo/logo-no-background.png" alt="">
+      
+        </div>
+
+        <div class="profil">
+       <a href="../Profil/profil.html"> <ion-icon class="ikona_profil" name="person-outline" size="large"></ion-icon></a>
+      </div>
+      
+      </button>
+    </div>
+    <nav class="nav">
+      <div class="nav-links-container">
+        <br><br><br><br>
+
+        <a href="#" class="nav__link">
+          <span class="nav__text">Home</span>
+          <ion-icon name="home-outline" size="large"></ion-icon>
+        </a>
+
+
+
+        <a href="#" class="nav__link">
+          <span class="nav__text" onclick="otvoriPopup()">Gdje putovati?</span>
+          <ion-icon name="location-outline" size="large"></ion-icon>
+        </a>
+
+
+        <a href="Top 10/top10.html" class="nav__link">
+          <span class="nav__text">Top 10 Lokacija</span>
+          <ion-icon name="flame" size="large"></ion-icon>
+        </a>
+
+        <a href="../O nama/o nama.html" class="nav__link">
+          <span class="nav__text">O nama</span>
+          <ion-icon name="help-outline" size="large"></ion-icon>
+        </a>
+        <a href="../Kontakt/kontakt.html" class="nav__link">
+          <span class="nav__text">Kontakt</span>
+          <ion-icon name="call-outline" size="large"></ion-icon>
+        </a>
+
+        <img class="planeta" src="/O nama/Profilne/planeta.gif" alt="" width="60%">
+
+        
+        
+      </div>
+    </nav>
+    <div class="container">
+      
+      <div class="input-box">
+      <i class="uil uil-search"></i>
+      <input type="text" placeholder="Upisi destinaciju..." onblur="storeval(this)"/>
+      <button class="button" onclick="filter(c)">Search</button>
+      
+    </div>
+
+    <div class="container2">
+    <div class="popup" id="popup1">
+      <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="otvoriPopup()">&times;</div>
+          <h1>Ne znate gdje putovati?</h1>
+          <p>Odradite kratki kviz koji ce vam pomoci da se odlučite.</p>
+          <label class="containers">
+          <input type="radio" name="prvi" id="ljeto">Ljeto
+          <span class="checkmark"></span>
+        </label>
+        <label class="containers">
+          <input type="radio" name="prvi" id="zima">Zima
+          <span class="checkmark"></span>
+        </label>
+          <hr>
+          <label class="containers">
+          <input type="radio" name="drugi" id="plaza">Pored plaže
+          <span class="checkmark"></span>
+        </label>
+        <label class="containers">
+          <input type="radio" name="drugi" id="neplaza">Druga Lokacija
+          <span class="checkmark"></span>
+        </label>
+          <hr>
+          <button type="button" onclick="prikazi()">Unesi</button>
+
+       </div>
+    </div>
+     
+
+      <div class="card Novi Zeland summern">
+        <div class="face face1">
+          <div class="content">
+            <div class="pic">
+              <img src="/Main/Hoteli/1618521304513.jpg" width="80%">
+            </div>
+            <div class="text">
+              <h1>Hilton Auckland</h1>
+              <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+            </div>
+            <div class="rating">
+              <h1>Najbolja ponuda 365$</h1>
+            </div>
+            <div class="heart">
+              <input id="heart" type="checkbox" />
+              <label for="heart">❤</label>
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+          <div class="prvi">
+          <button type="button" value="https://tinyurl.com/yznat8wv" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+          </div>
+          <div class="drugi">
+            <button type="button" value="https://tinyurl.com/2p98ee6w" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+          </div>
+          <div class="treci">
+            <button type="button" value="https://tinyurl.com/3rm696sy" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+          </div>
+          <div class="cetvrti" onclick="ponuda()">
+            <button type="button">Najbolja ponuda</button>
+
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card Velika Britanija wintern">
+        <div class="face face1">
+          <div class="content">
+            <div class="pic">
+              <img src="/Main/Hoteli/BKLYN-SUITE-2-1367x831.jpg" width="80%">
+            </div>
+            <div class="text">
+              <h1>Hotel Brooklyn Leicester</h1>
+              <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+            </div>
+            <div class="rating">
+              <h1>Najbolja ponuda 80$</h1>
+            </div>
+            <div class="heart">
+              <input id="heart" type="checkbox" />
+              <label for="heart">❤</label>
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+          <div class="prvi">
+          <button type="button" value="https://tinyurl.com/34vtemks" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+          </div>
+          <div class="drugi">
+            <button type="button" value="https://tinyurl.com/2p8m9x5b" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+          </div>
+          <div class="treci">
+            <button type="button" value="https://tinyurl.com/28ew4adt" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+          </div>
+          <div class="cetvrti" onclick="ponuda()">
+            <button type="button">Najbolja ponuda</button>
+
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card Grčka summerp">
+        <div class="face face1">
+          <div class="content">
+            <div class="pic">
+              <img src="/Main/Hoteli/divani-meteora-hotel-exterior-view-meteora-07.jpg" width="80%">
+            </div>
+            <div class="text">
+              <h1>Hotel Divani Meteora</h1>
+              <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+            </div>
+            <div class="rating">
+              <h1>Najbolja ponuda 161$</h1>
+            </div>
+            <div class="heart">
+              <input id="heart" type="checkbox" />
+              <label for="heart">❤</label>
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+          <div class="prvi">
+          <button type="button" value="https://tinyurl.com/3zab93ev" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+          </div>
+          <div class="drugi">
+            <button type="button" value="https://tinyurl.com/5n6d2wy9" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+          </div>
+          <div class="treci">
+            <button type="button" value="https://tinyurl.com/2p9dbzwd" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+          </div>
+          <div class="cetvrti" onclick="ponuda()">
+            <button type="button">Najbolja ponuda</button>
+
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card Tajland summerp">
+        <div class="face face1">
+          <div class="content">
+            <div class="pic">
+              <img src="/Main/Hoteli/ozo-phuket-exterior-resize.jpg" width="80%">
+            </div>
+            <div class="text">
+              <h1>OZO Phuket</h1>
+              <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+            </div>
+            <div class="rating">
+              <h1>Najbolja ponuda 312$</h1>
+            </div>
+            <div class="heart">
+              <input id="heart" type="checkbox" />
+              <label for="heart">❤</label>
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+          <div class="prvi">
+          <button type="button" value="https://tinyurl.com/38bddxrn" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+          </div>
+          <div class="drugi">
+            <button type="button" value="https://tinyurl.com/45cj5s9d" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+          </div>
+          <div class="treci">
+            <button type="button" value="https://tinyurl.com/yex55466" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+          </div>
+          <div class="cetvrti" onclick="ponuda()">
+            <button type="button">Najbolja ponuda</button>
+
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card Japan summern wintern">
+        <div class="face face1">
+          <div class="content">
+            <div class="pic">
+              <img src="/Main/Hoteli/347972296.jpg" width="80%">
+            </div>
+            <div class="text">
+              <h1>Shinagawa Prince</h1>
+              <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+            </div>
+            <div class="rating">
+              <h1>Najbolja ponuda 188$</h1>
+            </div>
+            <div class="heart">
+              <input id="heart" type="checkbox" />
+              <label for="heart">❤</label>
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+          <div class="prvi">
+          <button type="button" value="https://tinyurl.com/y8fawffp" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+          </div>
+          <div class="drugi">
+            <button type="button" value="https://tinyurl.com/4u4w859a" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+          </div>
+          <div class="treci">
+            <button type="button" value="https://tinyurl.com/vbmuymek" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+          </div>
+          <div class="cetvrti" onclick="ponuda()">
+            <button type="button">Najbolja ponuda</button>
+
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card Danska wintern summern">
+        <div class="face face1">
+          <div class="content">
+            <div class="pic">
+              <img src="/Main/Hoteli/309538.jpeg" width="80%">
+            </div>
+            <div class="text">
+              <h1>Danhostel Kalundborg</h1>
+              <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+            </div>
+            <div class="rating">
+              <h1>Najbolja ponuda 188$</h1>
+            </div>
+            <div class="heart">
+              <input id="heart" type="checkbox" />
+              <label for="heart">❤</label>
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+          <div class="prvi">
+          <button type="button" value="https://tinyurl.com/2rpj7pt4" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+          </div>
+          <div class="drugi">
+            <button type="button" value="https://tinyurl.com/ym75bj6v" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+          </div>
+          <div class="treci">
+            <button type="button" value="https://tinyurl.com/mw3cxyu3" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+          </div>
+          <div class="cetvrti" onclick="ponuda()">
+            <button type="button">Najbolja ponuda</button>
+
+          </div>
+          </div>
+        </div>
+      </div>
+           
+         
+        </div>
+        <div class="card Indija wintern summern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/facade.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>The Lalit New Delhi</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 80$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/5n7nc5jr" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/59hyw3ed" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/bdf53cac" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Singapur winterp summern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/a63317a7f6fb43205a7af5f72f81245d.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Carlton Hotel Singapore</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 306$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/mr7sum3p" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/pxfzvxa2" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/bde98k4k" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Italija summern wintern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/782997-exterior.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Colonna Palace</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 306$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/4t86yv52" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/bdduffnv" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/2j4xab4t" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Portugal summerp summern wintern winterp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/pestana-porto-goldsmith_15856337063.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>One Shot Aliados Goldsmith</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 105$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/mwmaffvc" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/2z84r8j3" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/mu3xj4az" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Tajland">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/95422096.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Phangan Bayshore Resort</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 105$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/2ksx8as6" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/mneh247a" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/33xvdwsh" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Novi Zeland">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/ascot-park-hotel.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Ascot Park Hotel</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 112$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/44d294bs" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/bdbnnr85" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/4snt4ffv" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Japan wintern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/7263_15021714440025397044.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Hotel Keio Plaza Tokyo</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 120$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/ykxuk2mr" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/k7a8yeuj" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/2z6hmncy" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Grčka summern summerp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/azur-hotel.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Azur Vouligameni</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 110$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/563k38j4" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/yasxe24a" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/d9rbh4zt" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Singapur summerp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/19634456.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Peninsula Excelsior</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 163$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/5c8f3ebb" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/yuw8zny2" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/2p8x9ruj" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Velika Britanija wintern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/186409225.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>CitySuites</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 121$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/538u6zb2" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/5n7kc65e" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/5dt92ber" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Portugal summerp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/infante-sagres-lobby.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Hotel Infante Sagres</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 169$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/9btawj2h" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/3vtjpbb4" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/4r4cky3a" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card India">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/park-hyatt-jakarta.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Park Hyatt</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 107$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/3tbebxya" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/kv8f7tr4" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/ydu7d7fc" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+      <div class="card Italija">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/EGO-Hotel_Ancona-MySuite-vista-mare-570x420.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>EGO Hotel Ancona</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 107$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/58y2vwp9" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/ymzrfww5" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/fjt2jb5t" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Danska">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/179162445.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Jomfru Ane</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 98$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/2hnvdnek" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/yvtbzhke" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/n5ytp748" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Velika Britanija">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/junior-suite-02jpg.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Malmaison Manchester</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 101$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/2r6djwzh" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/3wyayysc" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/4sc2hjxy" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Tajland">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/3616_ho_00_p_1024x768.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Pullman Bangkok Hotel G</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 189$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/mv6m3bbb" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/5fa24v8s" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/c9t9vd5p" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Japan">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/caption.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Sunroute Plaza Shinjuku</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 219$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/yuey4f97" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/d9rvtu7v" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/4fehfam4" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Singapur">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/130023505.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Orchid Country Club</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 178$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/4j87rpha" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/ysd5jndj" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/2uyvpusc" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Italija">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/1531835530.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Hotel Baglio Basile</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 84$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/4p2m6zzp" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/mtkz2nbj" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/3hty4a38" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Novi Zeland">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/HERO-tower-suite-lounge-high-res-1024x683.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Barclay Suites</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 186$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/yz2xzyex" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/bde5vktx" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/3jxtate2" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Danska">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/Scandic-Aarhus-City-Interior-room-Standard.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Scandic Aarhus City</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 193$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/mrxyfyhc" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/2fetcf67" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/297yn79a" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Indija">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/39cc034a926435bc6368835dd2c076e8.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Svenska Hotel</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 39$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/3jf5cha5" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/y2euh8zr" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/ub6sz4rx" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Grčka">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/3383609.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Hotel Crithoni's Paradise</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 99$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/3jf5cha5" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/y2euh8zr" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/ub6sz4rx" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Portugal">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/lobby--v16619149.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Tivoli Avenida Liberdade</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 456$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/ywnrffwj" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/45yjwx6c" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/5b4p59r9" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Španija summerp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/374729197.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Don Juan</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 43$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/4m628zec" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/yck3nua6" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/txz52k44" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Egipat summern wintern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/simply-neon-the-hotel.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Holiday Inn Cairo - Citystars</h1>
+                <img src="../Main/Zvjezdice/5 zvjezdica.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 215$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/2vkk5kbt" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/2966pk3e" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/3kcsnk7m" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Kanada wintern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/brookstreet-hotel.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>BrookStreet Hotel</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 118$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/3fw9yukr" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/yc2cd69r" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/7c2y6pzs" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Španija winterp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/k-k-hotel-picasso.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>K+K Hotel Picasso</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 222$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/yc5ps478" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/hyycu96k" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/5bprej8j" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Kanada">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/274963732.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Comfort Inn Baie-Comeau</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 132$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/ajt52chy" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/nkvev47w" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/9caahbwy" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Egipat summern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/5aabbec78a867a0e4fe02336cd0dd37b.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Pyramisa Isis Island Aswan</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 91$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/3cf94mdh" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/ybsfr8md" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/mv8ah8tk" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Španija winterp">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/doble-superior-inicio.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Hotel Quinta de los Cedros</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 149$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/5ys3cn26" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/muubxjny" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/bdee4ku9" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Egipat">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/124013623.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>Al Masah Hotel and Spa</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 179$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/rez5mx3t" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/4vcnteb5" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/8pnuw4ar" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Kanada">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/one-king-west-hotel-residence.jpg" width="80%">
+              </div>
+              <div class="text">
+                <h1>One King West Hotel & Residence</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 199$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/5ymryv6v" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/adtr2v93" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/mpvyt3k2" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Hrvatska summern">
+          <div class="face face1">
+            <div class="content">
+              <div class="pic">
+                <img src="/Main/Hoteli/PLITVICE_HOLIDAY-25.jpg" width="75%">
+              </div>
+              <div class="text">
+                <h1>Plitvice Holiday Resort</h1>
+                <img src="../Main/Zvjezdice/4 zvjezdice.png" width="170px">
+              </div>
+              <div class="rating">
+                <h1>Najbolja ponuda 199$</h1>
+              </div>
+              <div class="heart">
+                <input id="heart" type="checkbox" />
+                <label for="heart">❤</label>
+  
+              </div>
+             
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+            <div class="prvi">
+            <button type="button" value="https://tinyurl.com/587ympb3" onmouseover="SaveVariable(this)" onclick="otvori()">1. Ponuda</button></a>
+            </div>
+            <div class="drugi">
+              <button type="button" value="https://tinyurl.com/rma95s8k" onmouseover="SaveVariable(this)" onclick="otvori()">2. Ponuda</button>
+            </div>
+            <div class="treci">
+              <button type="button" value="https://tinyurl.com/28fj3y5n" onmouseover="SaveVariable(this)" onclick="otvori()">3. Ponuda</button>
+            </div>
+            <div class="cetvrti" onclick="ponuda()">
+              <button type="button">Najbolja ponuda</button>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </div>
+    
+
+
+</body>    
+
+   
+
+    
+  

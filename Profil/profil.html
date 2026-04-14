@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="profil.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="profil.js"></script>
+</head>
+<body>
+    <div class="logo_div">
+        <img class="logo" src="../Main/Logo/logo-no-background.png" alt="">
+    
+      </div>
+
+<div class="wrapper">
+    <div class="left">
+        <img src="profil.jpg" 
+        alt="user" width="100">
+        <h4 id="username"></h4>
+         <p>Korisnik 4D Travel</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Informacije</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Email</h4>
+                    <p id="email"></p>
+                 </div>
+                 <div class="data">
+                   
+              </div>
+            </div>
+        </div>
+      
+      <div class="projects">
+            <h3>O profilu</h3>
+            <div class="projects_data">
+                 <div class="data">
+                    <h4>Prijavljen</h4>
+                    <p id="vrijeme"></p>
+                 </div>
+                 <div class="data">
+                   <h4>Profil kreiran</h4>
+                    <p id="vrijeme1"></p>
+              </div>
+            </div>
+        </div>
+      
+    
+      </div>
+    </div>
+</div>
+<button type="button" id="odjava" onclick="odjavit()">Odjavite se</button>
+
+</body>
+</html>
+<script>
+function odjavit(){
+  window.open("../Main/mainpage.html", "_self");
+}
+</script>
